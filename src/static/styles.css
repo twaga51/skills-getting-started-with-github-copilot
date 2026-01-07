@@ -157,8 +157,9 @@ footer {
 }
 
 .participants-list {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 6px;
@@ -176,6 +177,33 @@ footer {
   border-radius: 6px;
   padding: 6px 8px;
   color: #1a237e;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.delete-participant {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background-color: #ffebee;
 }
 
 .participants-list li.empty {
